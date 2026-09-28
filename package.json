@@ -1,0 +1,17 @@
+{
+  "name": "mzeeshanyousaf-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio website for M. Zeeshan Yousaf — Senior Software Engineer",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=@portfolio/web",
+    "build": "npm run build --workspace=@portfolio/web",
+    "lint": "npm run lint --workspaces"
+  },
+  "keywords": ["portfolio", "nextjs", "monorepo"],
+  "author": "M Zeeshan Yousaf",
+  "license": "MIT"
+}
