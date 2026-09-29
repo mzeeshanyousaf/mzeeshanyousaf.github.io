@@ -8,7 +8,7 @@ interface ProjectItem {
   id: string;
   title: string;
   role: string;
-  category: 'Plugins & APIs' | 'Themes & Frontend' | 'Migrations & Systems';
+  category: 'Plugins & APIs' | 'Themes & Frontend' | 'Migrations & Systems' | 'Headless & Mobile';
   tags: string[];
   description: string;
   deliverables: string[];
@@ -367,7 +367,7 @@ export default function SelectedWork() {
     },
   ];
 
-  const categories = ['All', 'Plugins & APIs', 'Themes & Frontend', 'Migrations & Systems'];
+  const categories = ['All', 'Plugins & APIs', 'Themes & Frontend', 'Migrations & Systems', 'Headless & Mobile'];
 
   const filtered = filter === 'All' ? projects : projects.filter((p) => p.category === filter);
 
