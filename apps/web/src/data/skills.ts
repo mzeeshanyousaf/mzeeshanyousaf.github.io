@@ -29,7 +29,7 @@ export const skillAreas: SkillArea[] = [
       { name: 'Next.js 14 (App Router)', level: 92 },
       { name: 'Tailwind CSS', level: 95 },
       { name: 'NestJS Backend', level: 85 },
-      { name: 'Vue.js', level: 80 },
+      { name: 'React Native', level: 88 },
       { name: 'Bootstrap & Grid Systems', level: 92 },
       { name: 'jQuery & Legacy Bridges', level: 90 },
     ],

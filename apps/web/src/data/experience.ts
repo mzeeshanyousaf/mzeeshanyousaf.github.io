@@ -10,7 +10,7 @@ export const experience: Experience[] = [
     summary:
       'Architecting and developing custom WordPress themes, bespoke plugins, and headless solutions using React, GraphQL, and REST APIs for global enterprise clients.',
     achievements: [
-      { value: '98+', label: 'Google Lighthouse CWV across enterprise client builds' },
+      { value: 'Enterprise', label: 'Scale custom plugins & BuddyBoss architectures' },
       { value: '100%', label: 'Update-safe VIP coding standards & zero-vulnerability audit' },
     ],
     responsibilities: [

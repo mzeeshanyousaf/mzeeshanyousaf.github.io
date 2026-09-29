@@ -4,7 +4,7 @@ export const faqs: Faq[] = [
   {
     question: 'What types of projects do you typically take on?',
     answer:
-      'I specialize in complex, high-concurrency web engineering: custom WordPress plugin and theme development, REST/GraphQL API integrations (QuickBooks, Xero, Stripe, PayPal, Streamline VRS), WooCommerce e-commerce scaling, cross-platform Shopify migrations, and modern headless React/Next.js architectures.',
+      'I specialize in complex, high-concurrency web engineering: custom WordPress plugin and theme development, REST/GraphQL API integrations (QuickBooks, Xero, Stripe, PayPal, Streamline VRS, Trackabi), WooCommerce e-commerce scaling, cross-platform Shopify migrations, and modern headless React/Next.js and React Native omnichannel architectures.',
   },
   {
     question: 'How do you guarantee that WordPress customizations remain update-safe?',
@@ -24,7 +24,7 @@ export const faqs: Faq[] = [
   {
     question: 'Are you open to full-time remote roles or contract consulting?',
     answer:
-      'Yes. I am currently open to Senior Software Engineer (WordPress Core, Full-Stack PHP, React) positions with ambitious product teams, as well as select contract architecture and migration consulting.',
+      'Yes. I am currently open to Lead Software Engineer (WordPress, Full-Stack PHP, Shopify, React/React Native) positions with ambitious product teams, as well as select contract architecture and migration consulting.',
   },
   {
     question: 'What does day-to-day collaboration and communication look like?',

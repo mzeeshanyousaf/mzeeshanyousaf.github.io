@@ -228,38 +228,6 @@ export default function Projects() {
                 </div>
               </div>
 
-              {/* Action Links */}
-              <div
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '0.75rem',
-                  borderTop: '1px solid var(--border-color)',
-                  paddingTop: '1.25rem',
-                }}
-              >
-                <a
-                  href={project.githubUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-secondary"
-                  style={{ flex: 1, fontSize: '0.85rem', padding: '0.6rem 1rem' }}
-                >
-                  <Github size={15} />
-                  <span>GitHub</span>
-                </a>
-
-                <a
-                  href={project.liveUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary"
-                  style={{ flex: 1, fontSize: '0.85rem', padding: '0.6rem 1rem' }}
-                >
-                  <span>Live Demo</span>
-                  <ExternalLink size={15} />
-                </a>
-              </div>
             </div>
           ))}
         </div>
