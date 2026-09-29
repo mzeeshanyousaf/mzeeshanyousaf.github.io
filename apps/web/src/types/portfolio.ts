@@ -17,8 +17,8 @@ export interface Project {
   metrics: Metric[];
   stack: string[];
   image: string;
-  liveUrl: string;
-  repoUrl: string;
+  liveUrl?: string;
+  repoUrl?: string;
   tags?: string[];
 }
 
