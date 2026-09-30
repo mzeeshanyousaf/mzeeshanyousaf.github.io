@@ -107,27 +107,6 @@ export const projects: Project[] = [
     tags: ['Fintech', 'QuickBooks API', 'Stripe', 'Accounting'],
   },
   {
-    slug: 'xero-accounting-automation',
-    title: 'WooCommerce Xero Cloud Accounting',
-    year: '2024',
-    category: 'Plugins & APIs',
-    role: 'Lead WordPress & API Integration Engineer',
-    summary:
-      'Automated Xero accounting synchronization plugin for WooCommerce, mapping order payments, tax rates, contact records, and automated invoice reconciliation.',
-    challenge:
-      'Handling multi-currency transactions, varying domestic/international sales tax rates, and credit notes for partial returns without manual bookkeeping intervention.',
-    outcome:
-      'Developed a modular plugin that captures order lifecycle hooks to generate compliant Xero sales invoices, tax line allocations, and balance adjustments automatically.',
-    metrics: [
-      { value: '100%', label: 'Automated invoice generation' },
-      { value: 'Multi-Currency', label: 'Exchange rate & tax line mapping' },
-      { value: '< 200ms', label: 'Sync event execution time' },
-    ],
-    stack: ['PHP (OOP)', 'Xero REST API', 'OAuth 2.0', 'WooCommerce Core', 'Webhook Handlers'],
-    image: '/projects/xero-accounting.png',
-    tags: ['Xero API', 'E-Commerce', 'Financial Automation', 'OOP PHP'],
-  },
-  {
     slug: 'trackabi-time-tracking-sync',
     title: 'Custom Freelance Platform & Trackabi Time-Tracking API Integration',
     year: '2023',
@@ -166,7 +145,7 @@ export const projects: Project[] = [
       { value: '< 150ms', label: 'Modern PHP 8.x response times' },
     ],
     stack: ['Modern PHP 8.x', 'Security Hardening', 'Database Indexing', 'Loggitry Console', 'SRE'],
-    image: '/projects/legacy-php-debug.png',
+    image: '/projects/legacy-php.png',
     tags: ['Dev Tools', 'PHP 8.x', 'Security', 'Database Optimization'],
   },
   {
@@ -187,7 +166,7 @@ export const projects: Project[] = [
       { value: '< 100ms', label: 'Per-batch database transaction' },
     ],
     stack: ['WooCommerce Core', 'Batch $wpdb', 'PHP Streams', 'CSV Engine', 'Postmeta Optimization'],
-    image: '/projects/woocommerce-bulk-price.png',
+    image: '/projects/woocommerce-bulk-sync.png',
     tags: ['WooCommerce', 'High Performance', 'Batch Processing', 'MySQL'],
   },
   {
@@ -208,7 +187,7 @@ export const projects: Project[] = [
       { value: '< 200ms', label: 'Dashboard query response' },
     ],
     stack: ['PHP (OOP)', 'Custom Post Types (CPTs)', 'Role-Based Access Control', 'AJAX', 'File Pipeline'],
-    image: '/projects/legacy-php-debug.png',
+    image: '/projects/internal-job-board.png',
     tags: ['PHP', 'Recruitment', 'Automation', 'RBAC'],
   },
   {
@@ -229,7 +208,7 @@ export const projects: Project[] = [
       { value: '< 100ms', label: 'Native Liquid interaction delay' },
     ],
     stack: ['Shopify Liquid', 'JSON Templates', 'ES6 JavaScript', 'Horizon Theme API', 'OS 2.0'],
-    image: '/projects/headless-gutenberg.png',
+    image: '/projects/shopify-wellness.png',
     tags: ['Shopify', 'Liquid', 'Frontend', 'Performance'],
   },
   {
@@ -250,7 +229,7 @@ export const projects: Project[] = [
       { value: '< 150ms', label: 'WPGraphQL endpoint response' },
     ],
     stack: ['React Native', 'Headless WordPress', 'WPGraphQL', 'Apollo Client', 'Redux Toolkit'],
-    image: '/projects/headless-gutenberg.png',
+    image: '/projects/react-native-headless.png',
     tags: ['React Native', 'Headless WooCommerce', 'GraphQL', 'Mobile'],
   },
   {
@@ -313,7 +292,7 @@ export const projects: Project[] = [
       { value: 'Tiered', label: 'Automated role-based access rules' },
     ],
     stack: ['WordPress Core', 'MemberPress', 'ReadyLaunch UI', 'Stripe Subscriptions', 'Custom SCSS'],
-    image: '/projects/memberpress-readylaunch.png',
+    image: '/projects/memberpress-lms.png',
     tags: ['MemberPress', 'LMS', 'Memberships', 'Stripe'],
   },
 ];

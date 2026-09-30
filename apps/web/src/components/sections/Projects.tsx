@@ -57,7 +57,7 @@ export function Projects() {
         })}
       </Reveal>
 
-      <div className="mt-12 grid grid-cols-1 gap-5 md:grid-cols-2 lg:auto-rows-[360px] lg:grid-cols-3">
+      <div className="mt-12 grid grid-cols-1 gap-5 md:grid-cols-2 lg:auto-rows-[400px] lg:grid-cols-3">
         {filteredProjects.map((p, i) => {
           // Dynamic bento sizing for visual rhythm
           let size: 'featured' | 'wide' | 'default' = 'default';
@@ -66,8 +66,11 @@ export function Projects() {
           if (filter === 'All') {
             if (i === 0) {
               size = 'featured';
-              className = 'md:col-span-2 lg:row-span-2';
+              className = 'md:col-span-2 lg:col-span-2 lg:row-span-2';
             } else if (i === 3) {
+              size = 'wide';
+              className = 'md:col-span-2 lg:col-span-2';
+            } else if (i === 6) {
               size = 'wide';
               className = 'md:col-span-2 lg:col-span-2';
             } else if (i === 7) {
@@ -75,7 +78,7 @@ export function Projects() {
               className = 'md:col-span-2 lg:col-span-3';
             } else if (i === 9) {
               size = 'featured';
-              className = 'md:col-span-2 lg:row-span-2';
+              className = 'md:col-span-2 lg:col-span-2 lg:row-span-2';
             }
           }
 

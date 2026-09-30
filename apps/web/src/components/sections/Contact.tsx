@@ -61,7 +61,7 @@ export function Contact() {
                 Whether you need a Senior WordPress Engineer, a custom PHP plugin architect, or a team lead for scalable web integrations — let’s build together.
               </p>
 
-              <div className="mt-8 flex flex-col gap-4">
+              <div className="mt-8 flex flex-col gap-6">
                 <div className="flex flex-wrap items-center gap-3">
                   <a
                     href={`mailto:${EMAIL}`}
@@ -82,13 +82,20 @@ export function Contact() {
                   </span>
                 </div>
 
-                <div className="flex items-center gap-3 font-mono text-xs text-muted">
-                  <PhoneIcon className="h-3.5 w-3.5 text-accent" />
-                  <a href={`tel:${PHONE.replace(/\s+/g, '')}`} className="hover:text-fg transition-colors">
-                    {PHONE}
-                  </a>
-                  <span className="text-line">|</span>
-                  <span>Skype: <span className="text-fg">zaki@teamento.com</span></span>
+                <div className="flex flex-wrap items-center gap-4 font-mono text-xs text-muted">
+                  <div className="flex items-center gap-2">
+                    <PhoneIcon className="h-3.5 w-3.5 text-accent" />
+                    <a href={`tel:${PHONE.replace(/\s+/g, '')}`} className="hover:text-fg transition-colors">
+                      {PHONE}
+                    </a>
+                  </div>
+                  <span className="text-line hidden sm:inline">|</span>
+                  <div className="flex items-center gap-2">
+                    <LinkedinIcon className="h-3.5 w-3.5 text-accent" />
+                    <a href="https://linkedin.com/in/devzeeshanyousaf" target="_blank" rel="noopener noreferrer" className="hover:text-fg transition-colors">
+                      devzeeshanyousaf
+                    </a>
+                  </div>
                 </div>
               </div>
 

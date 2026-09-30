@@ -149,27 +149,6 @@ export default function SelectedWork() {
       year: '2023',
     },
     {
-      id: 'xero-accounting-sync',
-      title: 'WooCommerce Xero Accounting Sync',
-      role: 'Lead WordPress & API Integration Engineer',
-      category: 'Plugins & APIs',
-      tags: ['PHP (OOP)', 'WooCommerce API', 'Xero REST API', 'OAuth 2.0', 'Financial Automation'],
-      description:
-        'Automated Xero accounting synchronization plugin for WooCommerce, mapping order payments, tax rates, contact records, and automated invoice reconciliation.',
-      deliverables: [
-        'Xero REST API OAuth 2.0: Architected a secure OAuth 2.0 token management workflow with token rotation to interface directly with Xero Accounting API.',
-        'Instant Invoice & Contact Creation: Automatically generated corresponding Xero sales invoices and synchronized customer contact profiles upon checkout.',
-        'Multi-Currency & Tax Line Allocation: Programmed accurate line-item mapping for domestic/international taxes, shipping fees, and discount codes.',
-        'Automated Credit Note Processing: Automatically generated credit notes in Xero when orders are cancelled or refunded within WooCommerce.',
-      ],
-      impact: [
-        'Financial Automation: Automated 100% of e-commerce invoice reconciliation into Xero cloud ledgers.',
-        'Audit Compliance: Maintained flawless tax and revenue reporting across multi-currency transactions with zero manual data entry.',
-      ],
-      image: '/projects/xero-accounting.png',
-      year: '2023',
-    },
-    {
       id: 'trackabi-sync',
       title: 'Custom Freelance Platform & Trackabi Time-Tracking API Integration',
       role: 'Lead WordPress & PHP Backend Integration Engineer',
@@ -210,7 +189,7 @@ export default function SelectedWork() {
         'System Stability: Achieved a 0% critical failure rate across migrated legacy applications by resolving core execution errors and patching legacy dependencies.',
         'Execution Speed: Improved database query execution speeds and overall application response times through backend refactoring and PHP 8.x engine optimizations.',
       ],
-      image: '/projects/legacy-php-debug.png',
+      image: '/projects/legacy-php.png',
       year: '2022',
     },
     {
@@ -232,7 +211,7 @@ export default function SelectedWork() {
         'Operational Efficiency: Reduced bulk pricing update times for enterprise stores from hours of manual entry down to seconds via automated CSV uploads.',
         'Server Reliability: Maintained sub-second database query execution and zero memory exhaustion failures while bulk-updating complex variable product matrices.',
       ],
-      image: '/projects/woocommerce-bulk-price.png',
+      image: '/projects/woocommerce-bulk-sync.png',
       year: '2022',
     },
     {
@@ -254,7 +233,7 @@ export default function SelectedWork() {
         'Security & Compliance: Prevented unauthorized public access to sensitive candidate resumes via role-based authentication checks and direct asset download guards.',
         'Performance: Lightweight, bespoke plugin footprint under 150 KB, maintaining sub-second load times across high-volume applicant review queries.',
       ],
-      image: '/projects/legacy-php-debug.png',
+      image: '/projects/internal-job-board.png',
       year: '2023',
     },
     {
@@ -277,7 +256,7 @@ export default function SelectedWork() {
         'Merchant Autonomy: Reduced the client’s reliance on developers by 80% for new product launches through flexible, drag-and-drop custom blocks in the Shopify Theme Customizer.',
         'Performance: Maintained a 90+ mobile Google Lighthouse score by relying on native Liquid logic rather than bloated app embeds.',
       ],
-      image: '/projects/headless-gutenberg.png',
+      image: '/projects/shopify-wellness.png',
       year: '2023',
     },
     {
@@ -299,7 +278,7 @@ export default function SelectedWork() {
         'Mobile UX & Speed: Delivered a sub-second, app-native browsing and checkout experience previously impossible on monolithic WooCommerce architectures.',
         'Omnichannel Scaling: Created a unified backend capable of seamlessly syncing inventory, accounts, and payments across the new mobile app and the existing web storefront.',
       ],
-      image: '/projects/headless-gutenberg.png',
+      image: '/projects/react-native-headless.png',
       year: '2023',
     },
     {
@@ -362,7 +341,7 @@ export default function SelectedWork() {
         'Student Engagement: Increased course completion rates by 35% through distraction-free, responsive ReadyLaunch classroom layouts.',
         'Subscription Retention: Streamlined self-service account management, reducing churn and billing support tickets by 45%.',
       ],
-      image: '/projects/memberpress-readylaunch.png',
+      image: '/projects/memberpress-lms.png',
       year: '2022',
     },
   ];
@@ -425,8 +404,8 @@ export default function SelectedWork() {
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))',
-            gap: '2rem',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(400px, 1fr))',
+            gap: '2.5rem',
           }}
         >
           {filtered.map((project) => (
@@ -448,7 +427,7 @@ export default function SelectedWork() {
                 <div
                   style={{
                     width: '100%',
-                    height: '220px',
+                    height: '240px',
                     borderRadius: '14px',
                     background: 'rgba(8, 12, 22, 0.95)',
                     border: '1px solid rgba(56, 189, 248, 0.25)',
@@ -527,11 +506,12 @@ export default function SelectedWork() {
                   <div>
                     <h3
                       style={{
-                        fontSize: '1.25rem',
+                        fontSize: '1.2rem',
                         fontWeight: 700,
                         color: '#ffffff',
                         letterSpacing: '-0.01em',
-                        marginBottom: '0.2rem',
+                        lineHeight: 1.35,
+                        marginBottom: '0.35rem',
                       }}
                     >
                       {project.title}
@@ -552,6 +532,10 @@ export default function SelectedWork() {
                     fontSize: '0.88rem',
                     lineHeight: 1.65,
                     marginBottom: '1.5rem',
+                    display: '-webkit-box',
+                    WebkitLineClamp: 3,
+                    WebkitBoxOrient: 'vertical',
+                    overflow: 'hidden',
                   }}
                 >
                   {project.description}

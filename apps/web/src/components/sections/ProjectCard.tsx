@@ -33,7 +33,7 @@ export function ProjectCard({ project, size = 'default', onOpen }: ProjectCardPr
       whileTap={{ scale: 0.99 }}
       transition={{ duration: 0.2, ease: [0.23, 1, 0.32, 1] }}
       aria-label={`Open ${project.title} project details`}
-      className="group relative flex h-full min-h-[360px] w-full flex-col overflow-hidden rounded-theme-lg border border-line bg-surface text-left transition-[border-color,box-shadow] duration-200 ease-out hover:border-accent/40 hover:shadow-[var(--glow)] focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+      className="group relative flex h-full min-h-[400px] w-full flex-col overflow-hidden rounded-theme-lg border border-line bg-surface text-left transition-[border-color,box-shadow] duration-200 ease-out hover:border-accent/40 hover:shadow-[var(--glow)] focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
     >
       <img
         src={project.image}
@@ -61,11 +61,11 @@ export function ProjectCard({ project, size = 'default', onOpen }: ProjectCardPr
           </span>
         </div>
 
-        <div className="mt-auto pt-14">
-          <h3 className={`display leading-snug text-fg ${featured ? 'text-4xl sm:text-5xl' : 'text-2xl sm:text-3xl'}`}>
+        <div className="mt-auto pt-8">
+          <h3 className={`display leading-tight text-fg line-clamp-3 ${featured ? 'text-3xl sm:text-4xl' : 'text-xl sm:text-2xl'}`}>
             {project.title}
           </h3>
-          <p className={`mt-3 leading-relaxed text-muted ${featured ? 'text-base' : 'line-clamp-2 text-sm'}`}>
+          <p className={`mt-3 leading-relaxed text-muted line-clamp-3 ${featured ? 'text-base' : 'text-sm'}`}>
             {project.summary}
           </p>
 
