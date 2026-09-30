@@ -4,7 +4,6 @@ export const skillAreas: SkillArea[] = [
   {
     id: 'wordpress-engineering',
     label: 'WordPress Core & Product Engineering',
-    years: 4,
     summary:
       'I build plugins like standalone software systems. I enforce strict PSR-4 autoloading, modular directory structures, and decoupled services rather than monolithic single-file hooks.',
     tools: [
@@ -18,7 +17,6 @@ export const skillAreas: SkillArea[] = [
   {
     id: 'shopify-ecommerce',
     label: 'Shopify & E-Commerce Engineering',
-    years: 3,
     summary:
       'I prioritize clean, native Shopify OS 2.0 Liquid code over app bloat, engineering features directly into the theme for sub-second page loads.',
     tools: [
@@ -31,7 +29,6 @@ export const skillAreas: SkillArea[] = [
   {
     id: 'enterprise-apis',
     label: 'Enterprise APIs & Backend Automations',
-    years: 4,
     summary:
       'I implement idempotent webhook listeners and persistent asynchronous queues to prevent data loss or duplicate transactions in API integrations.',
     tools: [
@@ -44,7 +41,6 @@ export const skillAreas: SkillArea[] = [
   {
     id: 'modern-web',
     label: 'Modern Web & Decoupled Frontend',
-    years: 4,
     summary:
       'When high-concurrency or bespoke UI experiences are required, I decouple the backend using modern frontend frameworks and headless CMS architectures.',
     tools: [
