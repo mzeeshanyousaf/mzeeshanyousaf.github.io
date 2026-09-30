@@ -2,38 +2,28 @@ import type { Faq } from '../types/portfolio';
 
 export const faqs: Faq[] = [
   {
-    question: 'What types of projects do you typically take on?',
+    question: 'What makes your custom WordPress plugin architecture different from typical setups?',
     answer:
-      'I specialize in complex, high-concurrency web engineering: custom WordPress plugin and theme development, REST/GraphQL API integrations (QuickBooks, Xero, Stripe, PayPal, Streamline VRS, Trackabi), WooCommerce e-commerce scaling, cross-platform Shopify migrations, and modern headless React/Next.js and React Native omnichannel architectures.',
+      'I build plugins like standalone software systems. I enforce strict PSR-4 autoloading, modular directory structures, and decoupled services rather than monolithic single-file hooks. Every database query utilizes prepared statements and transient/Redis caching to eliminate bottlenecks. Most importantly, I strictly follow WordPress VIP coding standards, meaning every plugin is update-safe, secure against vulnerabilities, and capable of operating under enterprise-grade server loads.',
   },
   {
-    question: 'How do you guarantee that WordPress customizations remain update-safe?',
+    question: 'How do you approach custom Shopify theme development versus using third-party apps?',
     answer:
-      'I follow strict WordPress VIP and PSR-4 coding standards. Every customization is engineered as an isolated, object-oriented plugin or child-theme hook listener. I never modify WordPress core files, vendor dependencies, or parent themes, ensuring seamless core upgrades without regression.',
+      'I prioritize clean, native Shopify OS 2.0 Liquid code over app bloat. Installing too many apps slows down page speed and hurts conversion rates. I engineer features like custom slide-out carts, variant swatches, bundle selectors, and subscription toggles directly into the theme using modular Liquid sections and modern vanilla JavaScript. This delivers sub-second page loads and a 90+ mobile Lighthouse score without paying recurring app fees.',
   },
   {
-    question: 'Can you integrate third-party APIs with WooCommerce or WordPress?',
+    question: 'How do you prevent data loss or duplicate transactions in API integrations like Stripe and QuickBooks?',
     answer:
-      'Yes. I have deep experience building bi-directional integrations with OAuth 2.0 token rotation, automated webhook listeners, rate-limit queues, and ledger synchronization for platforms like QuickBooks Online, Xero, Stripe, PayPal, Trackabi, and bespoke enterprise REST/SOAP endpoints.',
+      'I implement idempotent webhook listeners and persistent asynchronous queues. Incoming webhooks are validated by cryptographic signatures, logged to custom audit tables, and executed with duplicate-detection mechanisms. If an external service like QuickBooks is temporarily down, the queue safely retries using exponential backoff rather than failing the transaction or charging the customer twice.',
   },
   {
-    question: 'What is your approach to site speed and Core Web Vitals optimization?',
+    question: 'Have you built commercial, ready-for-market themes and plugins?',
     answer:
-      'I take a holistic approach from the database up: indexing high-frequency MySQL query columns, replacing repetitive queries with transient caches, eliminating render-blocking assets, lazy-loading media, and tuning server response times (TTFB) to consistently achieve 95+ Google Lighthouse scores.',
+      'Yes. I have designed and delivered scalable products from the ground up—including multi-vendor directory themes, community platforms on BuddyBoss, and custom diagnostic profiling tools. My commercial products pass rigorous Theme Check and Plugin Check audits, ship with standardized translation domains (i18n), and offer clean configuration panels without breaking when core platforms update.',
   },
   {
-    question: 'Are you open to full-time remote roles or contract consulting?',
+    question: 'Can you build modern headless frontends for WordPress or Shopify?',
     answer:
-      'Yes. I am currently open to Lead Software Engineer (WordPress, Full-Stack PHP, Shopify, React/React Native) positions with ambitious product teams, as well as select contract architecture and migration consulting.',
-  },
-  {
-    question: 'What does day-to-day collaboration and communication look like?',
-    answer:
-      'I operate async-first with clean documentation, GitHub pull requests, structured code reviews, and weekly live demo milestones. I keep stakeholders continuously updated via Slack/Skype and track tasks transparently through Jira, ClickUp, or Asana.',
-  },
-  {
-    question: 'Can you work with our existing codebase and engineering team?',
-    answer:
-      'Absolutely. I frequently step into mature, complex enterprise codebases. I conduct an initial audit, map out dependency risks, follow your established conventions and Git branching models, and mentor junior engineers along the way.',
+      'Yes. When high-concurrency, omnichannel performance, or bespoke UI experiences are required, I decouple the backend using Next.js on the frontend and WordPress (GraphQL/REST) or Shopify (Storefront API) as the headless content engine. This delivers sub-100ms client-side page transitions, enhanced security, and the flexibility of React with the editing ease of a CMS.',
   },
 ];

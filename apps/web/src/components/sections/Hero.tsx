@@ -68,8 +68,7 @@ export function Hero() {
           <div className="mt-14 grid grid-cols-1 gap-14 lg:grid-cols-12 lg:gap-10">
             <motion.div variants={item} className="order-2 lg:order-1 lg:col-span-6 lg:pt-10">
               <p className="max-w-xl text-xl leading-relaxed text-muted">
-                <span className="text-fg font-medium">Senior Software Engineer</span> with 4+ years of expertise in
-                architecting custom WordPress plugins, PHP (OOP) backends, scalable REST/GraphQL integrations, and high-performance headless web systems.
+                I engineer scalable, high-performance platforms across WordPress and Shopify. Specializing in VIP-standard OOP plugins, lean Liquid storefronts, and fault-tolerant API integrations designed for enterprise reliability.
               </p>
               {ctas}
             </motion.div>
@@ -94,13 +93,12 @@ export function Hero() {
         >
           <motion.h1
             variants={item}
-            className="display text-4xl leading-[1.05] text-fg sm:text-6xl lg:text-7xl xl:text-[5.1rem]"
+            className="display text-4xl leading-[1.05] text-fg sm:text-5xl lg:text-6xl xl:text-7xl"
           >
             Engineering <span className="text-gradient">high-performance</span> web systems.
           </motion.h1>
           <motion.p variants={item} className="mt-8 max-w-xl text-lg leading-relaxed text-muted">
-            I’m <span className="text-fg font-semibold">Muhammad Zeeshan Yousaf</span>, a Senior Software Engineer specializing
-            in custom OOP PHP plugins, financial API automations (Stripe, QuickBooks, Xero), scalable e-commerce, and modern headless React interfaces.
+            I’m <span className="text-fg font-semibold">Muhammad Zeeshan Yousaf</span> — a Senior Software Engineer specializing in custom OOP PHP plugins, commercial theme architecture, Shopify Liquid development, and robust API integrations. I build scalable, secure platforms engineered for speed, reliability, and zero downtime.
           </motion.p>
           {ctas}
           <motion.p variants={item} className="mt-12 font-mono text-xs text-muted">

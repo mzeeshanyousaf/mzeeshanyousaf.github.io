@@ -25,10 +25,10 @@ export default function Works() {
     },
     {
       id: 'custom-themes',
-      title: 'Enterprise Gutenberg & ACF Custom Theme',
+      title: 'Enterprise ACF Custom Theme',
       category: 'Theme Engineering',
-      description: 'Bespoke lightweight WordPress themes, ACF Blocks, and React-based custom Gutenberg blocks.',
-      tags: ['React', 'Gutenberg', 'Tailwind CSS', 'ACF Blocks'],
+      description: 'Bespoke lightweight WordPress themes and custom ACF blocks.',
+      tags: ['React', 'ACF Blocks', 'Tailwind CSS'],
       year: '2024',
     },
     {

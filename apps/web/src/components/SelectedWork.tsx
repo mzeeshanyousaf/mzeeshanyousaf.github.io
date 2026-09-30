@@ -282,21 +282,21 @@ export default function SelectedWork() {
       year: '2023',
     },
     {
-      id: 'headless-gutenberg-blocks',
-      title: 'Headless React & Gutenberg Blocks',
+      id: 'headless-acf-blocks',
+      title: 'Headless React & ACF Blocks',
       role: 'Senior WordPress & Frontend Engineer',
       category: 'Themes & Frontend',
-      tags: ['React', 'TypeScript', 'GraphQL', 'WP REST API', 'Gutenberg Blocks', 'Next.js'],
+      tags: ['React', 'TypeScript', 'GraphQL', 'WP REST API', 'ACF Blocks', 'Next.js'],
       description:
-        'Modern decoupled web architecture combining custom React-based Gutenberg editor blocks with a headless frontend powered by GraphQL and REST APIs.',
+        'Modern decoupled web architecture combining custom ACF editor blocks with a headless frontend powered by GraphQL and REST APIs.',
       deliverables: [
-        'React Gutenberg Block Library: Developed custom interactive Gutenberg blocks using `@wordpress/scripts`, React components, and custom inspector controls.',
+        'React ACF Block Library: Developed custom interactive ACF blocks using Advanced Custom Fields Pro, React components, and custom field controls.',
         'Headless API Architecture: Connected WordPress CMS data to a modern decoupled React/Next.js frontend using GraphQL queries and optimized REST endpoints.',
-        'Dynamic Component Hydration: Built client-side interactive widgets embedded directly inside Gutenberg block content.',
+        'Dynamic Component Hydration: Built client-side interactive widgets embedded directly inside ACF block content.',
         'Performance & CDN Caching: Configured edge caching and incremental static regeneration (ISR) for fast page delivery.',
       ],
       impact: [
-        'Editorial Experience: Provided non-technical content creators with intuitive drag-and-drop Gutenberg blocks while maintaining decoupled frontend flexibility.',
+        'Editorial Experience: Provided non-technical content creators with intuitive drag-and-drop ACF blocks while maintaining decoupled frontend flexibility.',
         'Performance Score: Achieved 98+ Google Lighthouse scores across mobile and desktop devices with instantaneous page transitions.',
       ],
       image: '/projects/headless-gutenberg.png',

@@ -40,6 +40,8 @@ export interface Education {
   period: string;
   grade?: string;
   location?: string;
+  focus?: string;
+  honors?: { title: string; date: string; description: string; }[];
 }
 
 export interface Award {
@@ -52,13 +54,12 @@ export interface Award {
 
 export interface SkillTool {
   name: string;
-  level: number;
+  description: string;
 }
 
 export interface SkillArea {
   id: string;
   label: string;
-  years: number;
   summary: string;
   tools: SkillTool[];
 }

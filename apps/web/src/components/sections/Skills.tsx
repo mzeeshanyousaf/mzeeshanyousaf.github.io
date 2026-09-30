@@ -37,7 +37,7 @@ export function Skills() {
             codebase reliability.
           </>
         }
-        description="4+ years across agencies, startups, and high-concurrency SaaS. I specialize in the hard parts: update-safe custom plugins, deep API synchronizations, database query tuning, and headless CMS architectures."
+        description="I engineer scalable, high-performance platforms across WordPress and Shopify. Specializing in VIP-standard OOP plugins, lean Liquid storefronts, and fault-tolerant API integrations designed for enterprise reliability."
       />
 
       <Reveal className="mt-16 grid grid-cols-1 gap-6 lg:grid-cols-12">
@@ -79,9 +79,6 @@ export function Skills() {
                   >
                     {a.label}
                   </span>
-                  <span className={`font-mono text-xs ${selected ? 'text-accent' : 'text-muted'}`}>
-                    {a.years} yrs
-                  </span>
                 </span>
               </button>
             );
@@ -105,20 +102,10 @@ export function Skills() {
               <h3 className="display text-3xl text-fg sm:text-4xl">{active.label}</h3>
               <p className="mt-4 max-w-xl leading-relaxed text-muted">{active.summary}</p>
               <ul className="mt-10 grid grid-cols-1 gap-x-10 gap-y-7 sm:grid-cols-2">
-                {active.tools.map((t, i) => (
-                  <li key={t.name}>
-                    <div className="flex items-baseline justify-between text-sm">
-                      <span className="text-fg font-medium">{t.name}</span>
-                      <span className="font-mono text-xs text-muted">{levelLabel(t.level)}</span>
-                    </div>
-                    <div className="relative mt-2.5 h-[3px] overflow-hidden rounded-full bg-line">
-                      <motion.div
-                        initial={{ scaleX: 0 }}
-                        animate={{ scaleX: t.level / 100 }}
-                        transition={{ duration: 0.35, delay: 0.05 + i * 0.04, ease }}
-                        className="absolute inset-0 origin-left bg-accent"
-                      />
-                    </div>
+                {active.tools.map((t) => (
+                  <li key={t.name} className="flex flex-col gap-1.5 border-l-2 border-accent/20 pl-4 transition-colors hover:border-accent">
+                    <span className="text-fg font-medium text-sm">{t.name}</span>
+                    <span className="text-muted text-sm leading-relaxed">{t.description}</span>
                   </li>
                 ))}
               </ul>
@@ -142,11 +129,4 @@ export function Skills() {
       </Reveal>
     </section>
   );
-}
-
-function levelLabel(level: number) {
-  if (level >= 95) return 'Master';
-  if (level >= 90) return 'Expert';
-  if (level >= 80) return 'Advanced';
-  return 'Proficient';
 }

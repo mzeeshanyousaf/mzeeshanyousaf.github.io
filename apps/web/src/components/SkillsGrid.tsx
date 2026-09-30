@@ -35,7 +35,7 @@ export default function SkillsGrid() {
     // WordPress & Ecosystem
     { name: 'Custom Theme Dev', symbol: '🎨', category: 'WordPress Ecosystem' },
     { name: 'Custom Plugin Dev', symbol: '🔌', category: 'WordPress Ecosystem' },
-    { name: 'Gutenberg Blocks', symbol: '🧱', category: 'WordPress Ecosystem' },
+    { name: 'ACF Blocks', symbol: '🧱', category: 'WordPress Ecosystem' },
     { name: 'Headless WordPress', symbol: '⚡', category: 'WordPress Ecosystem' },
     { name: 'WooCommerce', symbol: '🛒', category: 'WordPress Ecosystem' },
     { name: 'BuddyBoss Platform', symbol: '👥', category: 'WordPress Ecosystem' },

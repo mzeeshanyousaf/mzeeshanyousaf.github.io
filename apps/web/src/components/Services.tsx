@@ -15,8 +15,8 @@ export default function Services() {
     {
       icon: <Palette size={22} style={{ color: 'var(--neon-cyan)' }} />,
       number: '02',
-      title: 'Custom Theme & Gutenberg Block Development',
-      desc: 'Bespoke lightweight WordPress themes, ACF Blocks, and React-based custom Gutenberg blocks.',
+      title: 'Custom Theme & ACF Block Development',
+      desc: 'Bespoke lightweight WordPress themes and custom ACF blocks.',
       points: ['Full-site editing (FSE) & ACF Pro', 'Interactive React frontend components', 'Clean, semantic & accessible code'],
     },
     {

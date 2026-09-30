@@ -3,44 +3,44 @@ import type { Award, Education, Experience } from '../types/portfolio';
 export const experience: Experience[] = [
   {
     period: '05/2025 — Present',
-    role: 'SSE – WordPress Engineer',
+    role: 'Senior Software Engineer (WordPress & Systems Architecture)',
     company: 'Amentotech',
     location: 'Lahore, Pakistan (Hybrid / On-site)',
     current: true,
     summary:
-      'Architecting and developing custom WordPress themes, bespoke plugins, and headless solutions using React, GraphQL, and REST APIs for global enterprise clients.',
+      'Lead engineer architecting scalable WordPress plugins, commercial theme ecosystems, and headless interfaces. Focused on enterprise-grade performance, WordPress VIP compliance, and resilient API-driven backends.',
     achievements: [
-      { value: 'Enterprise', label: 'Scale custom plugins & BuddyBoss architectures' },
-      { value: '100%', label: 'Update-safe VIP coding standards & zero-vulnerability audit' },
+      { value: '100%', label: 'WordPress VIP & PSR-4 Compliance (Zero vulnerability audit)' },
+      { value: 'Sub-250ms', label: 'Core TTFB (Under heavy BuddyBoss & concurrent community load)' },
     ],
     responsibilities: [
-      'Architect and develop custom WordPress themes, bespoke plugins, and headless solutions using React, GraphQL, and REST APIs for global enterprise clients.',
-      'Optimize site performance, scalability, and security using advanced caching strategies, CDNs, database tuning, and vulnerability patching.',
-      'Collaborate directly with cross-functional stakeholders to translate complex business requirements into high-performing technical specifications.',
-      'Enforce WordPress Coding Standards, CI/CD pipelines, Git workflows, and rigorous code reviews to maintain clean, reusable codebases.',
-      'Research and implement modern web paradigms, including React-based custom Gutenberg block development (@wordpress/scripts) and headless CMS setups.',
+      'OOP Plugin & Theme Architecture: Architected modular, object-oriented PHP plugin codebases and bespoke theme frameworks leveraging PSR-4 autoloading, dependency injection, and clean hook lifecycles for global enterprise clients.',
+      'Commercial Product Engineering: Developed commercial-grade community and marketplace themes on top of BuddyBoss, optimizing complex relational data layers to prevent query bloat on large-scale installations.',
+      'ACF Block Ecosystems: Built custom native block suites using Advanced Custom Fields (ACF Pro), PHP rendering, and dynamic field registries, completely replacing legacy page builders and cutting page payload sizes.',
+      'API Automations & Headless Endpoints: Designed secure REST and GraphQL endpoints connecting WordPress with external SaaS backends and modern headless React/Next.js client frontends.',
+      'Code Standards & CI/CD: Instituted strict WordPress Coding Standards (WPCS), code review workflows, and automated linting pipelines, eliminating technical debt and regression bugs across team sprints.',
     ],
-    stack: ['WordPress Core', 'PHP (OOP)', 'React', 'GraphQL', 'REST APIs', 'MySQL', 'Gutenberg'],
+    stack: ['PHP 8.x (OOP)', 'WordPress Core & VIP', 'ACF Pro Blocks', 'BuddyBoss', 'REST & GraphQL', 'MySQL Indexing', 'Redis Caching'],
   },
   {
     period: '10/2022 — 05/2025',
-    role: 'Full-Stack Developer (WordPress, PHP, Shopify)',
+    role: 'Full-Stack Engineer (WordPress, PHP, Shopify)',
     company: 'Webbuggs',
     location: 'Lahore, Pakistan',
     summary:
-      'Engineered secure OOP PHP backends, built custom WooCommerce order and payment pipelines, executed cross-platform Shopify migrations, and optimized server response times.',
+      'Engineered custom e-commerce pipelines, bespoke WooCommerce/Shopify solutions, and deep financial API automations. Spearheaded performance tuning and zero-downtime cross-platform migrations.',
     achievements: [
-      { value: '−40%', label: 'Page load times reduced via query indexing & caching' },
-      { value: '0%', label: 'SQLi and XSS vulnerabilities through security hardening' },
+      { value: '−40%', label: 'Server Response Time (Through database query indexing & Redis caching)' },
+      { value: 'Zero', label: 'Data Mismatch (Across $1M+ in automated Stripe & accounting API syncs)' },
     ],
     responsibilities: [
-      'Optimized server response times, reducing page load times by 40% through caching and database indexing.',
-      'Engineered secure, object-oriented (OOP) PHP-based back-end solutions, eliminating SQL injection (SQLi) and XSS vulnerabilities.',
-      'Maintained and customized complex Shopify, WordPress, and WooCommerce applications for international clients.',
-      'Built custom WooCommerce payment and order management systems, extending core functionality with custom plugins.',
-      'Integrated third-party APIs and custom plugins to streamline business operations and improve site performance.',
+      'Financial & ERP Sync Engines: Built fault-tolerant webhook listeners and bi-directional integration pipelines connecting WooCommerce and custom portals to QuickBooks Online, Xero, Stripe, and Trackabi with automated retry handling.',
+      'Shopify Theme & Liquid Engineering: Developed custom Shopify OS 2.0 themes from scratch using performant Liquid markup, custom schema sections, AJAX mini-carts, and variant selectors without bloated third-party apps.',
+      'Database & Query Optimization: Eradicated high-latency wp_postmeta joins and unindexed queries across multi-thousand SKU stores, dropping checkout and catalog response times by 40%.',
+      'Zero-Downtime Data Migrations: Led complex cross-platform migrations between Shopify and WooCommerce, crafting custom ETL import scripts and comprehensive 301 redirect mappings to guarantee zero organic SEO traffic loss.',
+      'Custom B2B & Checkout Logic: Authored custom WooCommerce extensions handling dynamic wholesale pricing tiers, custom tax rules, and localized multi-currency checkouts.',
     ],
-    stack: ['PHP 8.x', 'WooCommerce', 'Shopify Liquid', 'REST APIs', 'MySQL', 'Tailwind CSS', 'Docker'],
+    stack: ['PHP (OOP)', 'Shopify Liquid (OS 2.0)', 'WooCommerce Internals', 'Stripe / QuickBooks APIs', 'MySQL', 'JavaScript (ES6+)', 'Tailwind CSS'],
   },
 ];
 
@@ -48,9 +48,22 @@ export const educationList: Education[] = [
   {
     degree: 'Master of Science in Computer Science (MSCS)',
     school: 'The Islamia University of Bahawalpur',
-    period: '2019 — 2022',
+    period: '2020 — 2022',
     grade: 'CGPA 3.56 / 4.00',
     location: 'Bahawalpur, Pakistan',
+    focus: 'Advanced Database Architectures, Deep Learning, and Distributed Software Engineering',
+    honors: [
+      {
+        title: 'Employee of the Month (11/2023)',
+        date: '11/2023',
+        description: 'Awarded at Webbuggs for architectural leadership on enterprise client rollouts.'
+      },
+      {
+        title: 'Outstanding Presentation Award (06/2022)',
+        date: '06/2022',
+        description: 'Recognized for applied deep learning and computer vision research at IUB.'
+      }
+    ]
   },
   {
     degree: 'Bachelor of Science in Computer Science (BSCS)',

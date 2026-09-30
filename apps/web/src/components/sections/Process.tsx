@@ -8,10 +8,10 @@ import { Reveal } from '../ui/Reveal';
 import { processSteps } from '../../data/process';
 
 const principles = [
-  { label: 'Engineering Standards', value: 'WordPress VIP & PSR-4' },
-  { label: 'Development Cadence', value: 'Weekly Staging Demos' },
-  { label: 'Communication Style', value: 'Async-first & Documented' },
-  { label: 'Security & Quality', value: 'OWASP & Zero SQLi' },
+  { label: 'Code Standards', value: 'WordPress VIP, PSR-4 & OS 2.0' },
+  { label: 'API Architecture', value: 'Idempotent Webhooks & Retry Queues' },
+  { label: 'Quality Gate', value: 'OWASP Hardened & Zero Regressions' },
+  { label: 'Deployment Model', value: 'Zero-Downtime Staging-to-Production' },
 ];
 
 export function Process() {
@@ -26,7 +26,7 @@ export function Process() {
             <SectionHeading
               id="process-heading"
               layout="stacked"
-              eyebrow="// engineering process"
+              eyebrow="// engineering methodology"
               title={
                 <>
                   Disciplined delivery,
@@ -34,7 +34,7 @@ export function Process() {
                   predictable execution.
                 </>
               }
-              description="A battle-tested 6-step engineering methodology that eliminates surprises. Every milestone is validated on staging with automated regression checks and clear progress logs."
+              description="A battle-tested 6-step engineering methodology engineered for zero regressions. From schema planning and API spikes to update-safe VIP codebases and edge caching, every phase is validated on staging with documented benchmarks and automated test gates."
             />
 
             <Reveal delay={0.05}>

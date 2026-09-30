@@ -233,25 +233,25 @@ export const projects: Project[] = [
     tags: ['React Native', 'Headless WooCommerce', 'GraphQL', 'Mobile'],
   },
   {
-    slug: 'headless-wordpress-gutenberg',
-    title: 'Headless WordPress & Custom React Gutenberg Blocks',
+    slug: 'headless-wordpress-acf',
+    title: 'Headless WordPress & Custom ACF Blocks',
     year: '2025',
     category: 'Themes & Frontend',
     role: 'Senior WordPress & Frontend Engineer',
     summary:
-      'Modern decoupled web architecture combining custom React-based Gutenberg editor blocks with a headless frontend powered by GraphQL and REST APIs.',
+      'Modern decoupled web architecture combining custom ACF editor blocks with a headless frontend powered by GraphQL and REST APIs.',
     challenge:
-      'Enterprise marketing teams needed Gutenberg’s visual editing power, but the engineering team required decoupled Next.js/React performance and edge caching.',
+      'Enterprise marketing teams needed native block visual editing power, but the engineering team required decoupled Next.js/React performance and edge caching.',
     outcome:
-      'Built custom modular Gutenberg blocks with @wordpress/scripts and exposed structured GraphQL schemas consumed by a decoupled Next.js frontend achieving a 98+ Lighthouse score.',
+      'Built custom modular ACF blocks with ACF Pro and exposed structured GraphQL schemas consumed by a decoupled Next.js frontend achieving a 98+ Lighthouse score.',
     metrics: [
       { value: '98+', label: 'Google Lighthouse Performance' },
-      { value: 'React & WP', label: 'Custom Gutenberg blocks' },
+      { value: 'ACF Pro & WP', label: 'Custom ACF blocks' },
       { value: '< 200ms', label: 'Next.js ISR edge delivery' },
     ],
     stack: ['React', 'TypeScript', 'GraphQL', 'Next.js', '@wordpress/scripts', 'Tailwind CSS'],
     image: '/projects/headless-gutenberg.png',
-    tags: ['Headless', 'React', 'Gutenberg', 'Next.js'],
+    tags: ['Headless', 'React', 'ACF Blocks', 'Next.js'],
   },
   {
     slug: 'multi-gateway-payment-engine',
