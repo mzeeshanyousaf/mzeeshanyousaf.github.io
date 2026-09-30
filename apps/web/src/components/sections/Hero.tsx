@@ -88,6 +88,7 @@ export function Hero() {
         <motion.div
           variants={container}
           initial="hidden"
+          animate="show"
           style={{ y: textY, opacity: fade }}
           className="order-2 lg:order-1 lg:col-span-7"
         >
@@ -110,6 +111,7 @@ export function Hero() {
         <motion.div
           style={{ y: visualY }}
           initial={{ opacity: 0, scale: 0.96 }}
+          animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.3, delay: 0.15, ease }}
           className="order-1 lg:order-2 lg:col-span-5"
         >
