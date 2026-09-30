@@ -66,14 +66,14 @@ export function Hero() {
             </motion.h1>
           </motion.div>
           <div className="mt-14 grid grid-cols-1 gap-14 lg:grid-cols-12 lg:gap-10">
-            <motion.div variants={item} className="lg:col-span-6 lg:pt-10">
+            <motion.div variants={item} className="order-2 lg:order-1 lg:col-span-6 lg:pt-10">
               <p className="max-w-xl text-xl leading-relaxed text-muted">
                 <span className="text-fg font-medium">Senior Software Engineer</span> with 4+ years of expertise in
                 architecting custom WordPress plugins, PHP (OOP) backends, scalable REST/GraphQL integrations, and high-performance headless web systems.
               </p>
               {ctas}
             </motion.div>
-            <motion.div style={{ y: visualY }} className="lg:col-span-5 lg:col-start-8 lg:-mt-64">
+            <motion.div style={{ y: visualY }} className="order-1 lg:order-2 lg:col-span-5 lg:col-start-8 lg:-mt-64">
               <HeroVisual />
             </motion.div>
           </div>
@@ -88,9 +88,8 @@ export function Hero() {
         <motion.div
           variants={container}
           initial="hidden"
-          animate="show"
           style={{ y: textY, opacity: fade }}
-          className="lg:col-span-7"
+          className="order-2 lg:order-1 lg:col-span-7"
         >
           <motion.h1
             variants={item}
@@ -111,9 +110,8 @@ export function Hero() {
         <motion.div
           style={{ y: visualY }}
           initial={{ opacity: 0, scale: 0.96 }}
-          animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.3, delay: 0.15, ease }}
-          className="lg:col-span-5"
+          className="order-1 lg:order-2 lg:col-span-5"
         >
           <HeroVisual />
         </motion.div>
