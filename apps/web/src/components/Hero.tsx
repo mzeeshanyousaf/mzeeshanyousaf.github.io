@@ -88,13 +88,13 @@ export default function Hero() {
               </a>
 
               <a
-                href="/Zeeshan_CV.pdf"
-                download="Muhammad_Zeeshan_Yousaf_CV.pdf"
+                href="/resume.pdf"
+                download="resume.pdf"
                 className="btn-glass"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span>Download CV</span>
+                <span>Download Resume</span>
                 <Download size={15} style={{ color: 'var(--text-muted)' }} />
               </a>
             </div>

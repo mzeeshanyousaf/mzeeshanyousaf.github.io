@@ -95,14 +95,14 @@ export function Hero() {
             variants={item}
             className="display text-4xl leading-[1.05] text-fg sm:text-5xl lg:text-6xl xl:text-7xl"
           >
-            Engineering <span className="text-gradient">high-performance</span> web &amp; mobile products.
+            Engineering <span className="text-gradient">high-performance</span> AI-powered products.
           </motion.h1>
           <motion.p variants={item} className="mt-8 max-w-xl text-lg leading-relaxed text-muted">
             I’m <span className="text-fg font-semibold">Muhammad Zeeshan Yousaf</span> — a Senior Software Engineer specializing in commercial WordPress software products, custom OOP PHP plugins, cross-platform <span className="text-fg font-medium">React Native mobile apps</span> connected via Headless WordPress REST APIs, and Shopify Liquid engineering. Powered by <span className="text-fg font-medium">AI-assisted rapid development workflows</span>, I accelerate architecture and product delivery without compromising speed, security, or zero-downtime reliability.
           </motion.p>
           {ctas}
           <motion.p variants={item} className="mt-12 font-mono text-xs text-muted">
-            Currently <span className="text-fg font-medium">Senior Software Engineer (WordPress &amp; Mobile Products) @ Amentotech</span>
+            Currently <span className="text-fg font-medium">SSE – WordPress Engineer @ Amentotech</span>
           </motion.p>
         </motion.div>
 
