@@ -3,24 +3,33 @@ import type { Award, Education, Experience } from '../types/portfolio';
 export const experience: Experience[] = [
   {
     period: '05/2025 — Present',
-    role: 'Senior Software Engineer (WordPress & Systems Architecture)',
+    role: 'Senior Software Engineer (WordPress & Mobile Product Engineering)',
     company: 'Amentotech',
     location: 'Lahore, Pakistan (Hybrid / On-site)',
     current: true,
     summary:
-      'Lead engineer architecting scalable WordPress plugins, commercial theme ecosystems, and headless interfaces. Focused on enterprise-grade performance, WordPress VIP compliance, and resilient API-driven backends.',
+      'Lead product engineer building commercial WordPress software ecosystems—including a full freelance service & job marketplace, a modular platform builder, and a production React Native companion mobile app connected via custom WordPress REST APIs, accelerated with AI-assisted development workflows.',
     achievements: [
-      { value: '100%', label: 'WordPress VIP & PSR-4 Compliance (Zero vulnerability audit)' },
-      { value: 'Sub-250ms', label: 'Core TTFB (Under heavy BuddyBoss & concurrent community load)' },
+      { value: '100%', label: 'WordPress VIP & PSR-4 Compliance across commercial plugins & REST APIs' },
+      { value: 'Sub-250ms', label: 'Core & REST API TTFB across marketplace, platform builder & mobile clients' },
     ],
     responsibilities: [
-      'OOP Plugin & Theme Architecture: Architected modular, object-oriented PHP plugin codebases and bespoke theme frameworks leveraging PSR-4 autoloading, dependency injection, and clean hook lifecycles for global enterprise clients.',
-      'Commercial Product Engineering: Developed commercial-grade community and marketplace themes on top of BuddyBoss, optimizing complex relational data layers to prevent query bloat on large-scale installations.',
-      'ACF Block Ecosystems: Built custom native block suites using Advanced Custom Fields (ACF Pro), PHP rendering, and dynamic field registries, completely replacing legacy page builders and cutting page payload sizes.',
-      'API Automations & Headless Endpoints: Designed secure REST and GraphQL endpoints connecting WordPress with external SaaS backends and modern headless React/Next.js client frontends.',
-      'Code Standards & CI/CD: Instituted strict WordPress Coding Standards (WPCS), code review workflows, and automated linting pipelines, eliminating technical debt and regression bugs across team sprints.',
+      'Freelance Service & Job Marketplace + Platform Builder: Engineered commercial-grade WordPress software products—including an end-to-end freelance service & job marketplace and a modular platform builder connected to WordPress via custom REST APIs and optimized relational data layers.',
+      'Production React Native Companion App: Architected and delivered a full cross-platform React Native mobile app (iOS & Android) synced directly with WordPress via secure REST API endpoints, JWT token authentication, real-time messaging, proposals, and marketplace workflows.',
+      'AI-Assisted Rapid Product Delivery: Integrated AI-assisted engineering workflows into architecture design, API scaffolding, refactoring, and automated QA—dramatically accelerating commercial release cycles while maintaining strict PSR-4 and WordPress VIP standards.',
+      'OOP Plugin & ACF Block Ecosystems: Built modular, object-oriented PHP 8.x plugins with PSR-4 autoloading, dependency injection, and custom Advanced Custom Fields (ACF Pro) block suites, cutting payload bloat across commercial installs.',
+      'Headless WordPress APIs & CI/CD Standards: Designed resilient, versioned WordPress REST API contracts for mobile and third-party SaaS integrations, paired with WPCS linting, code review gates, and automated release pipelines.',
     ],
-    stack: ['PHP 8.x (OOP)', 'WordPress Core & VIP', 'ACF Pro Blocks', 'BuddyBoss', 'REST & GraphQL', 'MySQL Indexing', 'Redis Caching'],
+    stack: [
+      'PHP 8.x (OOP)',
+      'WordPress Core & VIP',
+      'React Native',
+      'WordPress REST API',
+      'AI-Assisted Workflows',
+      'ACF Pro Blocks',
+      'MySQL Indexing',
+      'Redis Caching',
+    ],
   },
   {
     period: '10/2022 — 05/2025',

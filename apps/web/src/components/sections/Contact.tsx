@@ -2,17 +2,18 @@
 
 import React, { useRef, useState } from 'react';
 import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion';
-import { ArrowUpIcon, CheckIcon, CopyIcon, GithubIcon, LinkedinIcon, MailIcon, PhoneIcon } from 'lucide-react';
+import { ArrowUpIcon, ArrowUpRightIcon, CheckIcon, CopyIcon, GithubIcon, GlobeIcon, LinkedinIcon } from 'lucide-react';
 import { ContactForm } from './ContactForm';
 import { Reveal } from '../ui/Reveal';
 
-const EMAIL = 'chzeeshanyousaf343@gmail.com';
-const PHONE = '+92 303 6982 787';
+const LINKEDIN_URL = 'https://www.linkedin.com/in/devzeeshanyousaf';
+const GITHUB_URL = 'https://github.com/mzeeshanyousaf';
+const PORTFOLIO_URL = 'https://mzeeshanyousaf.github.io';
 
 const socials = [
-  { label: 'GitHub', href: 'https://github.com/mzeeshanyousaf', icon: GithubIcon },
-  { label: 'LinkedIn', href: 'https://linkedin.com/in/devzeeshanyousaf', icon: LinkedinIcon },
-  { label: 'Email', href: `mailto:${EMAIL}`, icon: MailIcon },
+  { label: 'GitHub', href: GITHUB_URL, icon: GithubIcon },
+  { label: 'LinkedIn', href: LINKEDIN_URL, icon: LinkedinIcon },
+  { label: 'Portfolio', href: PORTFOLIO_URL, icon: GlobeIcon },
 ];
 
 const details = [
@@ -30,7 +31,7 @@ export function Contact() {
 
   const copy = async () => {
     try {
-      await navigator.clipboard.writeText(EMAIL);
+      await navigator.clipboard.writeText(LINKEDIN_URL);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch {
@@ -58,42 +59,45 @@ export function Contact() {
                 Have a <span className="text-gradient">mission-critical</span> project or role?
               </h2>
               <p className="mt-6 max-w-md text-base leading-relaxed text-muted sm:text-lg">
-                Whether you need a Senior WordPress Engineer, a custom PHP plugin architect, or a team lead for scalable web integrations — let’s build together.
+                Whether you need a Senior WordPress &amp; Mobile Product Engineer, a custom OOP PHP architect, or a React Native + WordPress REST API specialist — let’s build together.
               </p>
 
-              <div className="mt-8 flex flex-col gap-6">
+              <div className="mt-8 flex flex-col gap-5">
                 <div className="flex flex-wrap items-center gap-3">
                   <a
-                    href={`mailto:${EMAIL}`}
-                    className="text-lg font-medium text-fg underline decoration-line decoration-1 underline-offset-8 transition-colors duration-150 ease-out hover:decoration-accent focus:outline-none focus-visible:decoration-accent sm:text-2xl"
+                    href={LINKEDIN_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-lg font-medium text-fg underline decoration-line decoration-1 underline-offset-8 transition-colors duration-150 ease-out hover:decoration-accent focus:outline-none focus-visible:decoration-accent sm:text-2xl"
                   >
-                    {EMAIL}
+                    linkedin.com/in/devzeeshanyousaf
+                    <ArrowUpRightIcon className="h-5 w-5 text-accent" aria-hidden="true" />
                   </a>
                   <button
                     type="button"
                     onClick={copy}
-                    aria-label={copied ? 'Email copied' : 'Copy email address'}
+                    aria-label={copied ? 'LinkedIn URL copied' : 'Copy LinkedIn profile URL'}
                     className="flex h-9 w-9 items-center justify-center rounded-theme-sm border border-line text-muted transition-colors duration-150 ease-out hover:border-accent/60 hover:text-fg focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                   >
                     {copied ? <CheckIcon className="h-4 w-4 text-accent" /> : <CopyIcon className="h-4 w-4" />}
                   </button>
                   <span className="sr-only" aria-live="polite">
-                    {copied ? 'Email copied to clipboard' : ''}
+                    {copied ? 'LinkedIn profile URL copied to clipboard' : ''}
                   </span>
                 </div>
 
                 <div className="flex flex-wrap items-center gap-4 font-mono text-xs text-muted">
                   <div className="flex items-center gap-2">
-                    <PhoneIcon className="h-3.5 w-3.5 text-accent" />
-                    <a href={`tel:${PHONE.replace(/\s+/g, '')}`} className="hover:text-fg transition-colors">
-                      {PHONE}
+                    <GithubIcon className="h-3.5 w-3.5 text-accent" />
+                    <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" className="hover:text-fg transition-colors">
+                      github.com/mzeeshanyousaf
                     </a>
                   </div>
                   <span className="text-line hidden sm:inline">|</span>
                   <div className="flex items-center gap-2">
-                    <LinkedinIcon className="h-3.5 w-3.5 text-accent" />
-                    <a href="https://linkedin.com/in/devzeeshanyousaf" target="_blank" rel="noopener noreferrer" className="hover:text-fg transition-colors">
-                      devzeeshanyousaf
+                    <GlobeIcon className="h-3.5 w-3.5 text-accent" />
+                    <a href={PORTFOLIO_URL} target="_blank" rel="noopener noreferrer" className="hover:text-fg transition-colors">
+                      mzeeshanyousaf.github.io
                     </a>
                   </div>
                 </div>

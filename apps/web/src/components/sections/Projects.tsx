@@ -8,7 +8,7 @@ import { Reveal } from '../ui/Reveal';
 import { projects } from '../../data/projects';
 import type { Project } from '../../types/portfolio';
 
-const categories = ['All', 'Plugins & APIs', 'Themes & Frontend', 'Migrations & Systems'];
+const categories = ['All', 'Headless & Mobile', 'Plugins & APIs', 'Themes & Frontend', 'Migrations & Systems'];
 
 export function Projects() {
   const [selected, setSelected] = useState<Project | null>(null);
@@ -32,7 +32,7 @@ export function Projects() {
             built to last.
           </>
         }
-        description="A curated catalog of 12 enterprise applications, bespoke plugins, API synchronizations, and migrations. Click any project for the architectural challenge, code outcome, and measurable metrics."
+        description={`A curated catalog of ${projects.length} commercial products, cross-platform mobile apps, bespoke plugins, API synchronizations, and migrations. Click any project for the architectural challenge, code outcome, and measurable metrics.`}
       />
 
       {/* Category Filter Pills */}
@@ -79,6 +79,9 @@ export function Projects() {
             } else if (i === 9) {
               size = 'featured';
               className = 'md:col-span-2 lg:col-span-2 lg:row-span-2';
+            } else if (i === 14) {
+              size = 'wide';
+              className = 'md:col-span-2 lg:col-span-2';
             }
           }
 

@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { AlertCircleIcon, ArrowRightIcon, CheckIcon, Loader2Icon } from 'lucide-react';
+import { AlertCircleIcon, ArrowRightIcon, ArrowUpRightIcon, CheckIcon, Loader2Icon } from 'lucide-react';
 
 type Status = 'idle' | 'submitting' | 'success' | 'error';
 
@@ -12,7 +12,8 @@ interface Errors {
   message?: string;
 }
 
-const intents = ['Senior / Full-time role', 'Custom Plugin / Contract', 'Architecture Advisory', 'Quick consultation'];
+const LINKEDIN_URL = 'https://www.linkedin.com/in/devzeeshanyousaf';
+const intents = ['Senior / Full-time role', 'WordPress Product / Plugin', 'React Native Mobile App', 'Architecture Advisory'];
 const ease = [0.23, 1, 0.32, 1] as const;
 
 export function ContactForm() {
@@ -22,6 +23,7 @@ export function ContactForm() {
   const [message, setMessage] = useState('');
   const [errors, setErrors] = useState<Errors>({});
   const [status, setStatus] = useState<Status>('idle');
+  const [copiedSummary, setCopiedSummary] = useState(false);
 
   const validate = (): Errors => {
     const e: Errors = {};
@@ -37,19 +39,17 @@ export function ContactForm() {
     setErrors(e);
     if (Object.keys(e).length) return;
     setStatus('submitting');
-    
-    // Simulate API submission or dispatch mailto
-    await new Promise((r) => setTimeout(r, 1000));
-    
-    // Fallback directly to mailto so user message is never lost
+
+    await new Promise((r) => setTimeout(r, 600));
+
+    const formatted = `[${intent}] from ${name} (${email})\n\n${message}`;
     try {
-      const subject = encodeURIComponent(`[Portfolio Inquiry: ${intent}] from ${name}`);
-      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nIntent: ${intent}\n\nMessage:\n${message}`);
-      window.open(`mailto:chzeeshanyousaf343@gmail.com?subject=${subject}&body=${body}`, '_blank');
+      await navigator.clipboard.writeText(formatted);
+      setCopiedSummary(true);
     } catch {
-      // Ignore if blocked
+      setCopiedSummary(false);
     }
-    
+
     setStatus('success');
   };
 
@@ -57,6 +57,7 @@ export function ContactForm() {
     setName('');
     setEmail('');
     setMessage('');
+    setCopiedSummary(false);
     setStatus('idle');
   };
 
@@ -78,17 +79,31 @@ export function ContactForm() {
           <span className="glow flex h-12 w-12 items-center justify-center rounded-full bg-accent text-bg">
             <CheckIcon className="h-6 w-6" />
           </span>
-          <h3 className="display mt-6 text-3xl font-semibold text-fg">Inquiry logged!</h3>
+          <h3 className="display mt-6 text-3xl font-semibold text-fg">Brief ready to send!</h3>
           <p className="mt-3 max-w-sm leading-relaxed text-muted">
-            Thank you, {name.split(' ')[0]}. I will review your requirements and respond to {email} within 24 hours.
+            Thank you, {name.split(' ')[0]}.{' '}
+            {copiedSummary
+              ? 'Your formatted brief has been copied to your clipboard—continue directly on LinkedIn to connect.'
+              : 'Continue directly on LinkedIn to send your brief and connect.'}
           </p>
-          <button
-            type="button"
-            onClick={reset}
-            className="mt-8 text-sm text-fg underline decoration-line underline-offset-4 transition-colors duration-150 ease-out hover:decoration-accent focus:outline-none focus-visible:text-accent"
-          >
-            Send another message
-          </button>
+          <div className="mt-6 flex flex-wrap items-center gap-4">
+            <a
+              href={LINKEDIN_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glow inline-flex items-center gap-2 rounded-theme bg-accent px-5 py-3 text-sm font-medium text-bg transition-colors duration-150 ease-out hover:bg-accent/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            >
+              Message on LinkedIn
+              <ArrowUpRightIcon className="h-4 w-4" />
+            </a>
+            <button
+              type="button"
+              onClick={reset}
+              className="text-sm text-fg underline decoration-line underline-offset-4 transition-colors duration-150 ease-out hover:decoration-accent focus:outline-none focus-visible:text-accent"
+            >
+              Draft another brief
+            </button>
+          </div>
         </motion.div>
       ) : (
         <motion.form
@@ -168,7 +183,7 @@ export function ContactForm() {
 
           {status === 'error' && (
             <p role="alert" className="flex items-center gap-2 text-sm text-red-300">
-              <AlertCircleIcon className="h-4 w-4" /> Something went wrong. Please email directly at chzeeshanyousaf343@gmail.com
+              <AlertCircleIcon className="h-4 w-4" /> Something went wrong. Please connect directly on LinkedIn (devzeeshanyousaf).
             </p>
           )}
 
@@ -179,11 +194,11 @@ export function ContactForm() {
           >
             {status === 'submitting' ? (
               <>
-                <Loader2Icon className="h-4 w-4 animate-spin" /> Transmitting…
+                <Loader2Icon className="h-4 w-4 animate-spin" /> Preparing brief…
               </>
             ) : (
               <>
-                Send direct message
+                Prepare inquiry &amp; connect
                 <ArrowRightIcon className="h-4 w-4 transition-transform duration-150 ease-out group-hover:translate-x-0.5" />
               </>
             )}

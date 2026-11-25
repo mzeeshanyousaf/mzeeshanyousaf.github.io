@@ -16,11 +16,11 @@ export const processSteps: ProcessStep[] = [
     deliverables: ['Proof-of-Concept API Gateways', 'ACF / Liquid Schema Prototypes', 'Security Threat Model & Nonce Matrix'],
   },
   {
-    title: 'Core OOP Engineering & Platform Build',
+    title: 'Core OOP Engineering & Product Build',
     duration: 'Week 2–5',
     description:
-      'Developing custom OOP PHP plugins, commercial-ready themes, or custom Liquid architectures. All backend code adheres strictly to PSR-4 standards, modular service containers, and WordPress VIP rules. Frontends use clean semantic markup, custom ACF Block components, or optimized Next.js views.',
-    deliverables: ['Modular, Update-Safe Plugin / Theme Codebase', 'Custom REST/GraphQL Endpoints & Hooks', 'Staging Demos with Active Git PR Logs'],
+      'Developing custom OOP PHP plugins, commercial WordPress products, Shopify Liquid storefronts, or Headless WordPress + React Native mobile apps. All backend code adheres strictly to PSR-4 standards, modular service containers, and WordPress VIP rules—accelerated by AI-assisted engineering workflows for rapid, clean delivery.',
+    deliverables: ['Modular, Update-Safe Plugin / Product Codebase', 'Headless WordPress REST API & React Native Views', 'Staging Demos with Active Git PR Logs'],
   },
   {
     title: 'Caching, Database Tuning & Security Hardening',

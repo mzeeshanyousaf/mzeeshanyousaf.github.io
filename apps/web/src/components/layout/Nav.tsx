@@ -46,7 +46,7 @@ export function Nav() {
           </span>
           <div className="flex flex-col">
             <span className="text-sm font-semibold tracking-tight text-fg">M. Zeeshan Yousaf</span>
-            <span className="hidden font-mono text-[10px] text-muted sm:inline-block">Senior WordPress & PHP Engineer</span>
+            <span className="hidden font-mono text-[10px] text-muted sm:inline-block">WordPress & Mobile Product Engineer</span>
           </div>
         </a>
 

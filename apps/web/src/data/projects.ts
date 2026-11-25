@@ -2,6 +2,48 @@ import type { Project } from '../types/portfolio';
 
 export const projects: Project[] = [
   {
+    slug: 'freelance-marketplace-react-native',
+    title: 'Commercial Freelance Service & Job Marketplace + React Native App',
+    year: '2026',
+    category: 'Headless & Mobile',
+    role: 'Lead WordPress & Mobile Product Engineer',
+    summary:
+      'Architected and delivered a commercial WordPress freelance service & job marketplace paired with a full, production cross-platform React Native companion app (iOS & Android). Connected web and mobile clients via custom, versioned WordPress REST API endpoints supporting real-time job feeds, proposals, milestone escrow, and messaging—accelerated with AI-assisted rapid engineering workflows.',
+    challenge:
+      'Synchronizing complex multi-role marketplace state—employer job postings, freelancer service packages, proposal negotiations, wallet transactions, and live chat—across web and mobile without REST latency or tight theme coupling.',
+    outcome:
+      'Built an OOP PSR-4 WordPress backend with optimized relational schemas and secure JWT-authenticated REST APIs, paired with a 60fps React Native mobile app delivering full feature parity across iOS and Android.',
+    metrics: [
+      { value: 'iOS + Android', label: 'Production React Native companion app' },
+      { value: '< 220ms', label: 'Authenticated WordPress REST API response' },
+      { value: '100%', label: 'PSR-4 & WordPress VIP compliant backend' },
+    ],
+    stack: ['React Native', 'WordPress REST API', 'PHP 8.x (OOP)', 'JWT Auth', 'MySQL Indexing', 'AI-Assisted Workflows'],
+    image: '/projects/freelance-marketplace-mobile.png',
+    tags: ['React Native', 'Commercial Product', 'Freelance Marketplace', 'WordPress REST API'],
+  },
+  {
+    slug: 'wordpress-platform-builder',
+    title: 'Commercial WordPress Platform Builder & REST API Ecosystem',
+    year: '2026',
+    category: 'Plugins & APIs',
+    role: 'Senior WordPress Product Engineer',
+    summary:
+      'Engineered a modular commercial WordPress platform builder enabling businesses to launch multi-tenant directories, service hubs, and custom workflows out of the box. Built on strict PSR-4 OOP plugin architecture, dynamic schema registries, ACF Pro block suites, and clean REST APIs for web and mobile extensibility.',
+    challenge:
+      'Traditional all-in-one WordPress themes suffer from tightly coupled templates, heavy database bloat, and fragile updates that break merchant customizations at scale.',
+    outcome:
+      'Architected a decoupled, update-safe plugin and module ecosystem with lazy-loaded service containers, custom indexed tables, and AI-assisted QA pipelines—slashing onboarding setup time while maintaining sub-250ms TTFB.',
+    metrics: [
+      { value: 'Sub-250ms', label: 'Core & API response under load' },
+      { value: 'Modular', label: 'PSR-4 plugin & REST extension layer' },
+      { value: 'Zero', label: 'Breaking changes across product releases' },
+    ],
+    stack: ['PHP 8.x (OOP)', 'WordPress Core & VIP', 'WordPress REST API', 'ACF Pro Blocks', 'Redis Caching', 'AI-Assisted Workflows'],
+    image: '/projects/platform-builder-ecosystem.png',
+    tags: ['Platform Builder', 'Commercial WordPress', 'OOP PHP', 'REST API'],
+  },
+  {
     slug: 'buddyboss-sports-community',
     title: 'BuddyBoss Sports Community Platform',
     year: '2026',
@@ -234,24 +276,24 @@ export const projects: Project[] = [
   },
   {
     slug: 'headless-wordpress-acf',
-    title: 'Headless WordPress & Custom ACF Blocks',
+    title: 'Headless WordPress & Structured ACF Block API Engine',
     year: '2025',
-    category: 'Themes & Frontend',
-    role: 'Senior WordPress & Frontend Engineer',
+    category: 'Headless & Mobile',
+    role: 'Senior WordPress & Headless API Engineer',
     summary:
-      'Modern decoupled web architecture combining custom ACF editor blocks with a headless frontend powered by GraphQL and REST APIs.',
+      'Modern decoupled content architecture combining custom ACF Pro editor blocks with structured WordPress REST and WPGraphQL schemas designed to power multi-channel web and React Native mobile clients.',
     challenge:
-      'Enterprise marketing teams needed native block visual editing power, but the engineering team required decoupled Next.js/React performance and edge caching.',
+      'Content teams needed native WordPress visual block authoring without losing strict schema guarantees for decoupled mobile and headless API consumers.',
     outcome:
-      'Built custom modular ACF blocks with ACF Pro and exposed structured GraphQL schemas consumed by a decoupled Next.js frontend achieving a 98+ Lighthouse score.',
+      'Built custom modular ACF Pro blocks with strongly typed REST & WPGraphQL payload resolvers and edge caching, delivering clean JSON schemas with sub-200ms API response times across web and mobile apps.',
     metrics: [
-      { value: '98+', label: 'Google Lighthouse Performance' },
-      { value: 'ACF Pro & WP', label: 'Custom ACF blocks' },
-      { value: '< 200ms', label: 'Next.js ISR edge delivery' },
+      { value: '< 200ms', label: 'Cached REST & GraphQL API delivery' },
+      { value: 'ACF Pro & WP', label: 'Structured custom block schemas' },
+      { value: 'Omnichannel', label: 'Single CMS powering web & mobile' },
     ],
-    stack: ['React', 'TypeScript', 'GraphQL', 'Next.js', '@wordpress/scripts', 'Tailwind CSS'],
+    stack: ['Headless WordPress', 'WordPress REST API', 'WPGraphQL', 'ACF Pro', 'PHP 8.x (OOP)', 'TypeScript'],
     image: '/projects/headless-gutenberg.png',
-    tags: ['Headless', 'React', 'ACF Blocks', 'Next.js'],
+    tags: ['Headless WordPress', 'REST API', 'ACF Blocks', 'GraphQL'],
   },
   {
     slug: 'multi-gateway-payment-engine',

@@ -37,7 +37,7 @@ export function Skills() {
             codebase reliability.
           </>
         }
-        description="I engineer scalable, high-performance platforms across WordPress and Shopify. Specializing in VIP-standard OOP plugins, lean Liquid storefronts, and fault-tolerant API integrations designed for enterprise reliability."
+        description="I engineer commercial WordPress software products, cross-platform React Native mobile apps connected via Headless WordPress REST APIs, lean Shopify Liquid storefronts, and fault-tolerant API integrations—accelerated with AI-assisted development workflows."
       />
 
       <Reveal className="mt-16 grid grid-cols-1 gap-6 lg:grid-cols-12">

@@ -20,7 +20,7 @@ export function Experience() {
             enterprise impact.
           </>
         }
-        description="From architecting update-safe commercial WordPress themes and enterprise plugins to engineering custom Shopify Liquid storefronts and resilient API pipelines—building high-throughput digital systems for global clients."
+        description="From architecting commercial WordPress software products, freelance marketplaces, and production React Native companion apps to engineering custom Shopify Liquid storefronts and resilient API pipelines."
       />
 
       <ol className="relative mt-16 space-y-10">

@@ -5,13 +5,25 @@ export const skillAreas: SkillArea[] = [
     id: 'wordpress-engineering',
     label: 'WordPress Core & Product Engineering',
     summary:
-      'I build plugins like standalone software systems. I enforce strict PSR-4 autoloading, modular directory structures, and decoupled services rather than monolithic single-file hooks.',
+      'I engineer commercial WordPress software products—marketplaces, platform builders, and OOP plugins—built with strict PSR-4 autoloading, modular services, and WordPress VIP security standards.',
     tools: [
-      { name: 'OOP Plugin Architecture', description: 'PSR-4 Autoloading, Dependency Injection, Custom Post Types & Relational Taxonomies, Action/Filter Lifecycle' },
+      { name: 'Commercial Product & OOP Plugins', description: 'PSR-4 Autoloading, Dependency Injection, Freelance Marketplaces, Platform Builders & Action/Filter Lifecycles' },
       { name: 'Standards & Security', description: 'WordPress VIP Guidelines, Nonce & Capability Verification, Data Sanitization/Escaping, Zero SQLi/XSS' },
-      { name: 'Theme Engineering', description: 'Commercial-ready Theme Architecture (_s / Understrap foundations), Modular Template Hierarchies, Asset Compilation (Vite/Webpack)' },
-      { name: 'ACF Block Development', description: 'Custom Block Suites (Advanced Custom Fields Pro, PHP Rendering, Field Groups, Dynamic Content)' },
-      { name: 'High Concurrency & Database', description: 'MySQL Query Tuning, Transients API, Redis Object Caching, BuddyBoss & LearnDash Optimization' },
+      { name: 'Headless REST & GraphQL APIs', description: 'Custom Versioned WP REST API Endpoints, JWT Auth, WPGraphQL Schemas & Mobile-Ready Data Contracts' },
+      { name: 'ACF Block Ecosystems', description: 'Custom Block Suites (Advanced Custom Fields Pro, PHP Rendering, Field Groups, Dynamic Content)' },
+      { name: 'High Concurrency & Database', description: 'MySQL Query Tuning, Custom Indexed Tables, Transients API, Redis Object Caching & BuddyBoss Optimization' },
+    ],
+  },
+  {
+    id: 'mobile-headless',
+    label: 'React Native & Headless Mobile',
+    summary:
+      'I build production cross-platform iOS & Android mobile applications powered by Headless WordPress REST APIs and WPGraphQL, delivering native 60fps experiences synchronized with web ecosystems.',
+    tools: [
+      { name: 'Cross-Platform Mobile Apps', description: 'React Native (iOS & Android), TypeScript, Native Navigation, Push Notifications & App Store Delivery' },
+      { name: 'Headless WordPress Integration', description: 'Custom WordPress REST APIs, WPGraphQL / WooGraphQL, Tokenized JWT Auth & Real-Time Data Sync' },
+      { name: 'State & Offline Resilience', description: 'Redux Toolkit, Apollo Client, Optimistic UI Updates, Secure Local Storage & API Caching' },
+      { name: 'Marketplace & Commerce Flows', description: 'Mobile Job/Service Feeds, Proposals, Messaging, Tokenized Checkouts & Order Tracking' },
     ],
   },
   {
@@ -28,40 +40,29 @@ export const skillAreas: SkillArea[] = [
   },
   {
     id: 'enterprise-apis',
-    label: 'Enterprise APIs & Backend Automations',
+    label: 'Enterprise APIs & AI Workflows',
     summary:
-      'I implement idempotent webhook listeners and persistent asynchronous queues to prevent data loss or duplicate transactions in API integrations.',
+      'I pair idempotent backend automations and resilient webhook queues with AI-assisted rapid development workflows to accelerate architecture, delivery, and QA at scale.',
     tools: [
+      { name: 'AI-Assisted Rapid Engineering', description: 'AI-Accelerated Architecture Prototyping, Automated Code Scaffolding, Refactoring & Regression QA Workflows' },
       { name: 'Financial & Accounting Sync', description: 'Stripe API (Idempotent Webhooks), PayPal, QuickBooks Online SDK, Xero' },
       { name: 'Vertical Integrations', description: 'Streamline VRS (Property Management), Trackabi (Time & Payroll ERP), HubSpot CRM, Zapier Webhooks' },
-      { name: 'Modern Backend Services', description: 'Node.js, NestJS, TypeScript, PostgreSQL, Prisma ORM' },
-      { name: 'Architecture', description: 'Asynchronous Job Queues, Retry Handlers, RESTful API Design, GraphQL Schema Design' },
-    ],
-  },
-  {
-    id: 'modern-web',
-    label: 'Modern Web & Decoupled Frontend',
-    summary:
-      'When high-concurrency or bespoke UI experiences are required, I decouple the backend using modern frontend frameworks and headless CMS architectures.',
-    tools: [
-      { name: 'Core', description: 'TypeScript, JavaScript (ES6+), HTML5 Semantic & Web A11y, Modern SCSS' },
-      { name: 'Frameworks & UI', description: 'Next.js (App Router, ISR, SSR), React, Tailwind CSS' },
-      { name: 'Workflow & Infrastructure', description: 'Git / GitHub Actions (CI/CD), Docker, WP Engine, Cloudflare Edge & Caching' },
+      { name: 'Backend & Infrastructure', description: 'Node.js, TypeScript, PostgreSQL, GitHub Actions (CI/CD), Docker, WP Engine & Cloudflare Edge' },
     ],
   },
 ];
 
 export const alsoFluent = [
-  'Divi Builder',
-  'WPBakery',
-  'Webpack & Vite',
-  'Prisma ORM',
-  'SQLite & PostgreSQL',
+  'React Native',
+  'WordPress REST API',
+  'AI-Assisted Workflows',
+  'Commercial Product Architecture',
+  'WPGraphQL & WooGraphQL',
   'Redis Transient Caching',
   'Cloudflare & CDN Edge',
   'WP Engine EverCache',
   'ACF Pro Field Architectures',
   'ETL Data Migration',
   '301 Redirection Mapping',
-  'Figma to Code',
+  'GitHub Actions CI/CD',
 ];

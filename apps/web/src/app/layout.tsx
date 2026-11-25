@@ -2,18 +2,21 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Muhammad Zeeshan Yousaf | Senior Software Engineer & WordPress Core',
+  title: 'Muhammad Zeeshan Yousaf | Senior WordPress & Mobile Product Engineer',
   description:
-    'Senior Software Engineer with 4+ years of expertise in WordPress Core, custom OOP PHP plugin architectures, API integrations (QuickBooks, Xero, Stripe), and modern headless React web applications.',
+    'Senior Software Engineer with 4+ years of expertise in commercial WordPress software products, OOP PHP plugin architectures, Headless WordPress + React Native mobile apps, Shopify Liquid, API integrations, and AI-assisted rapid product development.',
   keywords: [
     'Muhammad Zeeshan Yousaf',
     'Senior Software Engineer',
-    'Senior WordPress Engineer',
+    'Senior WordPress & Mobile Product Engineer',
+    'Commercial WordPress Products',
+    'React Native',
+    'Headless WordPress',
+    'WordPress REST API',
     'PHP OOP',
-    'React',
-    'Next.js',
     'WooCommerce',
-    'Shopify',
+    'Shopify Liquid',
+    'AI-Assisted Development',
     'QuickBooks API',
     'Stripe API',
     'Lahore Pakistan',

@@ -28,7 +28,7 @@ export function FaqSection() {
                 href="#contact"
                 className="group mt-8 inline-flex items-center gap-1.5 text-sm font-medium text-fg transition-colors duration-150 ease-out hover:text-accent focus:outline-none focus-visible:text-accent"
               >
-                Have a different question? Email me directly
+                Have a different question? Connect with me
                 <ArrowUpRightIcon className="h-4 w-4 transition-transform duration-150 ease-out group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
               </a>
             </Reveal>

@@ -9,9 +9,9 @@ import { processSteps } from '../../data/process';
 
 const principles = [
   { label: 'Code Standards', value: 'WordPress VIP, PSR-4 & OS 2.0' },
-  { label: 'API Architecture', value: 'Idempotent Webhooks & Retry Queues' },
+  { label: 'Mobile & Headless', value: 'React Native + WP REST API' },
+  { label: 'Delivery Velocity', value: 'AI-Assisted Rapid Workflows' },
   { label: 'Quality Gate', value: 'OWASP Hardened & Zero Regressions' },
-  { label: 'Deployment Model', value: 'Zero-Downtime Staging-to-Production' },
 ];
 
 export function Process() {

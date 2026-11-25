@@ -17,13 +17,13 @@ export const faqs: Faq[] = [
       'I implement idempotent webhook listeners and persistent asynchronous queues. Incoming webhooks are validated by cryptographic signatures, logged to custom audit tables, and executed with duplicate-detection mechanisms. If an external service like QuickBooks is temporarily down, the queue safely retries using exponential backoff rather than failing the transaction or charging the customer twice.',
   },
   {
-    question: 'Have you built commercial, ready-for-market themes and plugins?',
+    question: 'Have you built commercial, ready-for-market WordPress products and plugins?',
     answer:
-      'Yes. I have designed and delivered scalable products from the ground up—including multi-vendor directory themes, community platforms on BuddyBoss, and custom diagnostic profiling tools. My commercial products pass rigorous Theme Check and Plugin Check audits, ship with standardized translation domains (i18n), and offer clean configuration panels without breaking when core platforms update.',
+      'Yes. I have designed and delivered scalable commercial products from the ground up—including a freelance service & job marketplace, a modular WordPress platform builder, BuddyBoss community platforms, and diagnostic profiling tools. Every commercial product passes strict Plugin Check and WPCS audits, ships with standardized translation domains (i18n), and stays update-safe across core WordPress releases.',
   },
   {
-    question: 'Can you build modern headless frontends for WordPress or Shopify?',
+    question: 'Can you build cross-platform React Native mobile apps powered by Headless WordPress?',
     answer:
-      'Yes. When high-concurrency, omnichannel performance, or bespoke UI experiences are required, I decouple the backend using Next.js on the frontend and WordPress (GraphQL/REST) or Shopify (Storefront API) as the headless content engine. This delivers sub-100ms client-side page transitions, enhanced security, and the flexibility of React with the editing ease of a CMS.',
+      'Yes. I specialize in pairing Headless WordPress backends (custom REST API endpoints and WPGraphQL with JWT authentication) with production React Native apps for iOS and Android. Using AI-assisted rapid development workflows, I deliver synchronized mobile marketplaces, real-time notifications, and 60fps native experiences without duplicating business logic across platforms.',
   },
 ];
